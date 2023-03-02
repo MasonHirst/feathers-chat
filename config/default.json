@@ -11,7 +11,7 @@
   },
   "postgresql": {
     "client": "pg",
-    "connection": "postgresql://mhirstdev:v2_3ziQf_yfTMPF9mVjy92UVucikzkZs@db.bit.io:5432/mhirstdev/feathers-chat?ssl=true"
+    "connection": ""
   },
   "authentication": {
     "entity": "user",
