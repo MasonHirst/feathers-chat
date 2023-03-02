@@ -1,6 +1,6 @@
 # feathers-chat
 
-> This is my backend for my feathers chat
+> 
 
 ## About
 
