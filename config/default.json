@@ -11,6 +11,33 @@
   },
   "postgresql": {
     "client": "pg",
-    "connection": "postgresql://mhirstdev:v2_3ziQf_yfTMPF9mVjy92UVucikzkZs@db.bit.io:5432/mhirstdev/feathers-chat"
+    "connection": "postgresql://mhirstdev:v2_3ziQf_yfTMPF9mVjy92UVucikzkZs@db.bit.io:5432/mhirstdev/feathers-chat?ssl=true"
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "x95WW08MBZbmMlArWYjdZCfi6ZJVcuhI",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "oauth": {
+      "github": {
+        "key": "07273f41d314fc8be3b0",
+        "secret": "7ab02717cfbd08063422392bce66cced2917c43e"
+      }
+    }
   }
 }
